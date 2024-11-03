@@ -4,7 +4,9 @@ A React + TypeScript application that fetches and displays GitHub profiles along
 
 ## 📸 Demo
 
-![Demo](link-to-your-demo.gif)
+[🌐 Visit the demo](https://github-profile-rho-nine.vercel.app/)
+
+![Github Profile](https://github.com/ValentinOsvaldo/github-profile/blob/main/public/preview.png?raw=true)
 
 ## 🚀 Features
 
