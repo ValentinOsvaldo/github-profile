@@ -45,9 +45,9 @@ export interface Repository {
   labels_url:                  string;
   releases_url:                string;
   deployments_url:             string;
-  created_at:                  Date;
-  updated_at:                  Date;
-  pushed_at:                   Date;
+  created_at:                  string;
+  updated_at:                  string;
+  pushed_at:                   string;
   git_url:                     string;
   ssh_url:                     string;
   clone_url:                   string;
@@ -73,16 +73,11 @@ export interface Repository {
   is_template:                 boolean;
   web_commit_signoff_required: boolean;
   topics:                      string[];
-  visibility:                  Visibility;
+  visibility:                  string;
   forks:                       number;
   open_issues:                 number;
   watchers:                    number;
-  default_branch:              DefaultBranch;
-}
-
-export enum DefaultBranch {
-  Main = "main",
-  Master = "master",
+  default_branch:              string;
 }
 
 export interface License {
@@ -110,16 +105,7 @@ export interface Owner {
   repos_url:           string;
   events_url:          string;
   received_events_url: string;
-  type:                Type;
-  user_view_type:      Visibility;
+  type:                string;
+  user_view_type:      string;
   site_admin:          boolean;
-}
-
-export enum Type {
-  User = "User",
-}
-
-export enum Visibility {
-  Public = "public",
-  Private = "private",
 }

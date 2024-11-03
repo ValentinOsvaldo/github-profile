@@ -8,6 +8,6 @@ describe('Github Profiles', () => {
 
     cy.get('button').click();
 
-    cy.url().should('include', '/profile');
+    cy.url().should('include', '/profile/ValentinOsvaldo');
   });
 });
